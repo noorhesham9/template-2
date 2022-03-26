@@ -1,3 +1,10 @@
+/* variables */
+:root{
+  --maincolor:#19c8fa;
+
+}
+/* end variables  */
+
 *{
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
@@ -58,15 +65,49 @@ height: 1px;
 background-color: #a2a2a2;
 width: calc( 100% - 30px);
 left: 15px;
-bottom: -10px;
+bottom: 0px;
 }
 header .logo img{
 height: 35px;
 }
 header nav{
   flex: 1;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
 }
-.form i {
+header nav ul{
+  display: flex;
+}
+header nav ul li a{
+  display: block;
   color: white;
+  font-size: 14px;
+  text-decoration: none;
+  transition: 0.3s;
+  padding: 40px 10px;
+  position: relative;
+  z-index: 2;
 }
+header nav ul li a.active , header nav ul li a:hover{
+  color: var(--maincolor);
+  border-bottom: 1px solid var(--maincolor);
+}
+header nav .form{
+  width: 40px;
+  height: 30px;
+  position: relative;
+  margin-left: 30px ;
+  border-left: 1px solid white;
+}
+header nav .form i {
+  color: white;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+ font-size: 20px;
+ margin-left: 20px;
+ right: 0;
+}
+
 /* end header  */
