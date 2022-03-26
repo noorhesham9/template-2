@@ -174,9 +174,21 @@ padding: 50px;
     display: flex;
     justify-content: flex-end;
 }
+@media (max-width: 767px) {
+  .landing .text{
+    width: 100%;
+  }
+
+
+}
+  @media (min-width: 768px){
 .landing .text .content{
   max-width: 430px;
 }
+}
+
+
+
 .landing .text .content h2{
     font-size: 26px;
     font-weight: normal;
@@ -187,4 +199,43 @@ padding: 50px;
 font-size: 15px;
 line-height: 1.6;
 }
+.landing .fa-solid {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #ddd;
+  margin: 15px;
+  font-size: 25px;
+  font-weight: bold;
+}
+@media (max-width: 450px){
+  .landing .fa-solid{
+    display: none;
+  }
+}
+.landing .fa-angle-right{
+  right: 0;
+}
+.landing .fa-angle-left{
+left: 0;
+}
+.landing .bullets{
+position: absolute;
+left: 50%;
+transform: translateX(-50%);
+bottom: 30px;
+display: flex;
+}
+.landing .bullets li{
+width: 20px;
+    height: 20px;
+    border: 1.1px solid white;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+.landing .bullets .active{
+border: 1.1px solid var(--maincolor);
+background-color: var(--maincolor);
+}
+
 /* end landing  */
