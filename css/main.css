@@ -154,6 +154,12 @@ header nav .form i {
   background-image: url("../image/landing.jpg");
   background-size: cover;
   position: relative;
+  transition: 0.3s;
+}
+@media (max-width: 767px){
+  .landing{
+     background-image: url("../image/landing\ for\ mob.jpg");
+  }
 }
 .landing .overlay{
   position: absolute;
