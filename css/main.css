@@ -408,3 +408,20 @@ margin-bottom: 50px;
     
 } 
 /* end design */
+/* start portfolio  */
+.portfolio{
+    padding-top: var(--section-badding);
+  padding-bottom:var(--section-badding);
+}
+.portfolio .container .shuffle{
+  display: flex;
+justify-content: center;
+}
+.portfolio .container .shuffle li{
+  padding: 10px;
+}
+.portfolio .container .shuffle .active{
+background-color: var(--maincolor);
+color: white;
+}
+/* end portfolio  */
