@@ -695,7 +695,46 @@ border: 1.1px solid var(--maincolor);
 background-color: var(--maincolor);
 }
 
-.skills .container .our-skills{
-  
+.skills .our-skills .prog-holder{
+margin-bottom: 45px;
+}
+.skills .our-skills .prog-holder h4{
+margin-bottom: 15px;
+font-weight: normal;
+text-transform: uppercase;
+}
+.skills .our-skills .prog-holder .prog{
+    background-color: #dedadc;
+    height: 30px;
+}
+.skills .our-skills .prog-holder .prog span{
+    display: block;
+    background-color: var(--maincolor);
+    height: 100%;
+    position: relative;
+
+}
+.skills .our-skills .prog-holder .prog span::after{
+content: "";
+    position: absolute;
+    border: 8px solid;
+    border-color: black transparent transparent transparent;
+    right: -8px;
+    top: -10px;
+
+}
+.skills .our-skills .prog-holder .prog span::before{
+
+    background-color: black;
+    content: attr(data-progress);
+    position: absolute;
+    color: white;
+    padding: 5px 0;
+    width: 40px;
+    text-align: center;
+    border-radius: 5px;
+    right: -20px;
+    top: -37px;
+
 }
 /* end skils  */
