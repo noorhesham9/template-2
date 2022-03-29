@@ -614,3 +614,88 @@ font-family: 15px;
 letter-spacing: 1px;
 }
 /* end statistics  */
+/* start skils  */
+.skills{
+  padding-top: var(--section-badding);
+  padding-bottom:var(--section-badding);
+}
+.skills .container{
+display: flex;
+justify-content: space-between;
+flex-wrap: wrap;
+}
+@media (min-width:992px){
+  .skills .container > div{
+    flex-basis: 45%;
+  }
+}
+.skills .container > div > h3{
+  font-weight: normal;
+  margin: 0 0 40px;
+  text-align: center;
+  font-size: 25px;
+}
+.skills .container .testimonials{
+  position: relative;
+}
+.skills .container > div > p{
+line-height: 1.7;
+margin: 0 0 70px;
+color:#777;
+}
+.skills .testimonials .content {
+  display: flex;
+  margin-bottom: 30px;
+  align-items: center;
+}
+.skills .testimonials .content img{
+  height: 100px;
+  width: 100px;
+margin-right: 50px;
+  border-radius: 50%;
+}
+@media (max-width:767px) {
+.skills .testimonials .content {
+flex-direction: column;
+text-align: center;
+}
+.skills .testimonials .content img{
+margin: 0 auto 20px;
+}
+}
+
+
+
+
+.skills .testimonials .content .text{
+    border-bottom: 1px solid #ccc;
+    line-height: 1.8;
+}
+.skills .testimonials .content .text p{
+  text-align: right;
+  color: #777;
+  font-size: 15px;
+  margin-bottom: 10px 0;
+}
+.skills .testimonials .bullets{
+justify-content: center;
+display: flex;
+margin: 50px 0 ;
+}
+
+.skills .testimonials .bullets li{
+width: 20px;
+    height: 20px;
+    border: 1.1px solid #aaa;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+.skills .testimonials .bullets .active{
+border: 1.1px solid var(--maincolor);
+background-color: var(--maincolor);
+}
+
+.skills .container .our-skills{
+  
+}
+/* end skils  */
