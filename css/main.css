@@ -643,6 +643,7 @@ header nav .form i {
   background-image: url(../image/stats.png);
   background-size: cover;
   position: relative;
+  background-attachment: fixed;
 }
 
 .stats::before {
@@ -859,6 +860,7 @@ header nav .form i {
   background-size: cover;
   position: relative;
   text-align: center;
+  background-attachment: fixed;
 }
 
 .quote::before {
@@ -1024,6 +1026,7 @@ header nav .form i {
   background-image: url(../image/subscribe.jpg);
   background-size: cover;
   position: relative;
+  background-attachment: fixed;
 }
 
 .subscribe::before {
@@ -1106,3 +1109,174 @@ header nav .form i {
 }
 
 /* end subscribe  */
+/* start contact  */
+.contact {
+  padding-top: var(--section-badding);
+  padding-bottom: var(--section-badding);
+}
+
+.contact .content {
+  display: flex;
+  justify-content: space-between;
+}
+
+@media(max-width:767px) {
+  .contact .content {
+    flex-direction: column;
+  }
+}
+
+.contact .content form {
+  display: flex;
+  flex-direction: column;
+  flex-basis: 70%;
+  position: relative;
+}
+
+.contact .content form .inputM {
+  width: 100%;
+  padding: 20px;
+  border: 1px solid #ccc;
+  margin-bottom: 30px;
+  display: block;
+}
+
+.contact .content form textarea.inputM {
+  height: 200px;
+}
+
+.contact .content form .inputM:focus {
+  outline: none;
+}
+
+.contact .content form .submiT {
+  position: absolute;
+  right: 0;
+  width: 165px;
+  cursor: pointer;
+  height: 52px;
+  bottom: 0;
+  margin-bottom: -49px;
+  background-color: var(--maincolor);
+  border: none;
+  color: white;
+  text-transform: uppercase;
+  font-weight: 600;
+}
+
+.contact .content .info {
+  flex-basis: 25%;
+}
+
+@media(max-width:767px) {
+  .contact .content .info {
+    order: -1;
+    text-align: center;
+  }
+}
+
+.contact .content .info h4 {
+  text-transform: uppercase;
+  font-weight: 500;
+  font-size: 15px;
+  margin-bottom: 30px;
+}
+
+.contact .content .info .phone {
+  display: block;
+  margin-bottom: 10px;
+  color: #777;
+}
+
+.contact .content .info h4:nth-of-type(2) {
+  margin-top: 90px;
+}
+
+@media(max-width:767px) {
+  .contact .content .info h4:nth-of-type(2) {
+    margin-top: 30px;
+  }
+}
+
+.contact .content .info address {
+  line-height: 2;
+  color: #777;
+}
+
+@media(max-width:767px) {
+  .contact .content .info address {
+    margin-bottom: 40px;
+  }
+}
+
+
+
+@media(max-width:767px) {
+  .contact .content .info {
+    display: flex;
+    justify-content: space-evenly;
+  }
+
+  .contact .content .info .phone {
+    margin-bottom: 17px;
+  }
+}
+
+/* end contact  */
+/* start footer  */
+.footer {
+  padding-top: calc(var(--section-badding) / 2);
+  padding-bottom: calc(var(--section-badding) / 2);
+  background-image: url(../image/subscribe.jpg);
+  position: relative;
+  background-size: cover;
+  color: white;
+  text-align: center;
+}
+
+.footer::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgb(0 0 0 / 70%);
+}
+
+.footer .container {
+  position: relative;
+}
+
+.footer .container p:not(.copyright) {
+  text-transform: uppercase;
+  padding: 20px;
+  border-bottom: 1px solid white;
+  font-size: 22px;
+  width: fit-content;
+  margin: 20px auto;
+}
+
+.footer .container .social-icons {
+  color: white;
+  margin-left: 3px;
+
+}
+
+.footer .container .social-icons a {
+  color: inherit;
+  padding: 10px 15px;
+  font-size: 18px;
+  transition: 0.5s;
+}
+
+.footer .container .copyright {
+  margin-top: 60px;
+}
+
+.footer .container .copyright span {
+  color: var(--maincolor);
+  font-weight: bold;
+}
+
+/* end footer  */
